@@ -123,7 +123,7 @@
     console.log(sharesPerPerson); // Output: 25
 
 
-/* REMAINDER ASSIGNMENT (/=) */
+/* REMAINDER ASSIGNMENT (%=) */
     console.log("Examples Of  REMAINDER Assignment Operator")
     //Example 1:
     let v = 10;
