@@ -29,19 +29,17 @@ In JavaScript, there are three ways to declare variables: `const`, `let`, and `v
 - **Behavior**:
   - **`Block-scoped:`** Like `const`, `let` is limited to the block in which it is declared (e.g., inside loops or conditionals).
   - **`Mutable:`** You can reassign (update) the value of the variable.
+      ```js  
+      let counter = 0;
+      counter = 5;    // Allowed, the value can be changed
+      console.log(counter); // 5
 
-        ```js  
-        let counter = 0;
-        counter = 5;    // Allowed, the value can be changed
-        console.log(counter); // 5
-
-        if (true) {
-            let message = 'Hello, World!';
-            console.log(message); // "Hello, World!"
-        }
-        console.log(message); // Error: message is not defined outside the block
-        ```
-
+      if (true) {
+        let message = 'Hello, World!';
+        console.log(message); // "Hello, World!"
+      }
+      console.log(message); // Error: message is not defined outside the block
+      ```
 **Important:** You can reassign the variable, but the variable will only exist within its block scope.
 
 ### 3. **`var` - Function-scoped Variable**
@@ -50,17 +48,15 @@ In JavaScript, there are three ways to declare variables: `const`, `let`, and `v
 
 - **Behavior**:
   - **`Function-scoped:`** Variables declared with `var` are accessible within the entire function (or globally if declared outside a function), regardless of where in the function they are declared.
+     ```js 
+    function testVar() {
+    console.log(x);   // undefined
+    var x = 10;
+    console.log(x);   // 10
+    }
 
-        ```js 
-        function testVar() {
-            console.log(x);   // undefined (due to hoisting)
-            var x = 10;
-            console.log(x);   // 10
-        }
-
-        testVar();
-        ```
-
+    testVar();
+    ```
 **Important:** Avoid using var in favor of let and const unless working with older codebases. It’s generally more prone to errors due to its function-scoping.
 
 
