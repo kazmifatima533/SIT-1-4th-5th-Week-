@@ -17,7 +17,7 @@ In JavaScript, there are three ways to declare variables: `const`, `let`, and `v
         person.name = 'Jane';  // Allowed, object properties can be modified
         console.log(person.name); // "Jane"
       ```
--**Important:** You cannot reassign the variable after it has been initialized. However, the contents of the object or array assigned to the `const` variable can still change/updated.
+**Important:** You cannot reassign the variable after it has been initialized. However, the contents of the object or array assigned to the `const` variable can still change/updated.
 
 
 ### 2. **`let` - Block-scoped Variable**
