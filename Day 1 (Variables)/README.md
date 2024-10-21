@@ -9,16 +9,14 @@ In JavaScript, there are three ways to declare variables: `const`, `let`, and `v
 - **Behavior**:
   - **`Block-scoped:`** The variable is only accessible within the block (e.g., inside functions, loops, or conditionals) where it is declared.
   - **`Immutable Reference:`** The reference to the value is immutable, but the value itself (if it's an object or array) can still be modified (updated).
-
-        ```js
+      ```js
         const PI = 3.14159;    // Constant value (cannot be reassigned)
         PI = 3.14;             // Error: Assignment to constant variable
 
         const person = { name: 'John' };
         person.name = 'Jane';  // Allowed, object properties can be modified
         console.log(person.name); // "Jane"
-        ```
-
+      ```
 -**Important:** You cannot reassign the variable after it has been initialized. However, the contents of the object or array assigned to the `const` variable can still change/updated.
 
 
